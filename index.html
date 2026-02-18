@@ -3,95 +3,114 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sahithi Tallapaneni | HR Tech & People Analytics</title>
+    <title>Sahithi Tallapaneni | HR Tech Visionary</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <style>
+        .smoke-bg { background: linear-gradient(to bottom, #ffffff, #f3f4f6, #e5e7eb); }
+        .roadmap-line { width: 4px; background: #1e3a8a; position: absolute; left: 50%; transform: translateX(-50%); height: 100%; z-index: 0; }
+    </style>
 </head>
-<body class="bg-gray-50 text-gray-800 font-sans">
+<body class="bg-white text-gray-900 overflow-x-hidden">
 
-    <nav class="bg-white shadow-sm sticky top-0 z-50">
-        <div class="max-w-5xl mx-auto px-4 py-4 flex justify-between items-center">
-            <h1 class="text-xl font-bold text-blue-900">ST. ANALYTICS</h1>
-            <div class="space-x-6 text-sm font-medium">
-                <a href="#about" class="hover:text-blue-600">About</a>
-                <a href="#projects" class="hover:text-blue-600">Projects</a>
-                <a href="#skills" class="hover:text-blue-600">Skills</a>
-                <a href="mailto:tallapanenisahithi@gmail.com" class="bg-blue-900 text-white px-4 py-2 rounded-lg">Contact</a>
+    <section class="h-screen flex items-center justify-center px-10">
+        <div class="max-w-6xl w-full flex flex-col md:flex-row items-center justify-between">
+            <div class="md:w-1/2" data-aos="fade-right">
+                <h1 class="text-5xl font-bold text-blue-900 mb-4">Hi, I am Sahithi Tallapaneni</h1>
+                <p class="text-xl italic text-gray-600 border-l-4 border-blue-900 pl-4">
+                    "A computer science student who accidentally discovered that technology is powerful… but people are everything."
+                </p>
             </div>
-        </div>
-    </nav>
-
-    <header class="bg-white border-b border-gray-100 py-20">
-        <div class="max-w-5xl mx-auto px-4 text-center">
-            <h2 class="text-4xl md:text-5xl font-extrabold text-gray-900 mb-4">Sahithi Tallapaneni</h2>
-            <p class="text-xl text-blue-700 font-medium mb-6">HR Technology & People Analytics | MS at UNT</p>
-            <p class="max-w-2xl mx-auto text-gray-600 leading-relaxed">
-                Specializing in HRIS architecture, data governance, and predictive workforce modeling. 
-                I bridge the gap between human capital and technical systems to drive organizational efficiency.
-            </p>
-            <div class="mt-8 flex justify-center gap-4">
-                <a href="https://linkedin.com/in/sahithi-tallapaneni-3736b3229" class="text-gray-500 hover:text-blue-700 text-2xl"><i class="fab fa-linkedin"></i></a>
-                <a href="#" class="text-gray-500 hover:text-black text-2xl"><i class="fab fa-github"></i></a>
-            </div>
-        </div>
-    </header>
-
-    <section id="skills" class="py-16 max-w-5xl mx-auto px-4">
-        <h3 class="text-2xl font-bold mb-10 text-center">Technical Ecosystem</h3>
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
-            <div class="p-6 bg-white rounded-xl shadow-sm border border-gray-100">
-                <i class="fas fa-database text-blue-600 text-3xl mb-3"></i>
-                <p class="font-bold">SQL</p>
-                <p class="text-xs text-gray-500">Data Querying & Audits</p>
-            </div>
-            <div class="p-6 bg-white rounded-xl shadow-sm border border-gray-100">
-                <i class="fab fa-python text-blue-600 text-3xl mb-3"></i>
-                <p class="font-bold">Python</p>
-                <p class="text-xs text-gray-500">Automation & Pandas</p>
-            </div>
-            <div class="p-6 bg-white rounded-xl shadow-sm border border-gray-100">
-                <i class="fas fa-chart-bar text-blue-600 text-3xl mb-3"></i>
-                <p class="font-bold">Power BI</p>
-                <p class="text-xs text-gray-500">Executive Dashboards</p>
-            </div>
-            <div class="p-6 bg-white rounded-xl shadow-sm border border-gray-100">
-                <i class="fas fa-microchip text-blue-600 text-3xl mb-3"></i>
-                <p class="font-bold">Workday/SAP</p>
-                <p class="text-xs text-gray-500">HRIS Configuration</p>
+            <div class="md:w-1/3 mt-10 md:mt-0" data-aos="zoom-in">
+                <div class="w-64 h-64 rounded-full border-8 border-blue-50 bg-gray-200 overflow-hidden shadow-2xl">
+                    <img src="YOUR_IMAGE_HERE.jpg" alt="Sahithi" class="w-full h-full object-cover">
+                </div>
             </div>
         </div>
     </section>
 
-    <section id="projects" class="py-16 bg-gray-100">
-        <div class="max-w-5xl mx-auto px-4">
-            <h3 class="text-2xl font-bold mb-10">Featured Projects</h3>
-            <div class="grid md:grid-cols-2 gap-8">
-                
-                <div class="bg-white rounded-2xl overflow-hidden shadow-md">
-                    <div class="p-8">
-                        <span class="text-blue-600 text-xs font-bold uppercase tracking-widest">Automation</span>
-                        <h4 class="text-xl font-bold mt-2 mb-4">HRIS Data Integrity Audit Tool</h4>
-                        <p class="text-gray-600 text-sm mb-6">A suite of SQL scripts designed to scan HRIS databases for inconsistencies, ensuring 99.9% data accuracy for payroll and compliance reporting.</p>
-                        <a href="#" class="text-blue-900 font-bold text-sm hover:underline">View on GitHub →</a>
-                    </div>
-                </div>
+    <section class="smoke-bg py-32 flex items-center justify-center text-center px-6">
+        <div data-aos="fade-up" data-aos-duration="2000" class="max-w-3xl">
+            <h2 class="text-3xl md:text-4xl font-light leading-relaxed">
+                Heres the story: <span class="font-bold text-blue-900">Computer science chose me</span> and i chose HR and turns out there is a bridge between both.
+            </h2>
+        </div>
+    </section>
 
-                <div class="bg-white rounded-2xl overflow-hidden shadow-md">
-                    <div class="p-8">
-                        <span class="text-blue-600 text-xs font-bold uppercase tracking-widest">Analytics</span>
-                        <h4 class="text-xl font-bold mt-2 mb-4">Workforce Attrition Predictor</h4>
-                        <p class="text-gray-600 text-sm mb-6">Using Python and Logistic Regression to analyze historical turnover data and predict high-risk retention segments for 2026 workforce planning.</p>
-                        <a href="#" class="text-blue-900 font-bold text-sm hover:underline">View on GitHub →</a>
-                    </div>
-                </div>
+    <section class="py-20 relative px-6">
+        <h3 class="text-4xl font-bold text-center mb-20">My Life Roadmap</h3>
+        
+        <div class="max-w-4xl mx-auto relative">
+            <div class="roadmap-line hidden md:block"></div>
 
+            <div class="relative mb-20 flex flex-col md:flex-row items-center" data-aos="fade-left">
+                <div class="md:w-1/2 md:pr-10 text-right hidden md:block">
+                    <h4 class="text-2xl font-bold text-blue-900">The Foundation</h4>
+                    <p class="text-gray-500">2020 - 2024</p>
+                </div>
+                <div class="bg-blue-900 w-6 h-6 rounded-full z-10 hidden md:block"></div>
+                <div class="md:w-1/2 md:pl-10">
+                    <h4 class="text-2xl font-bold">Bachelors in Computer Science</h4>
+                    <p class="mt-2 text-gray-600">Built the technical core. Won a Hackathon in Web Development and discovered the "human side" of tech volunteering with <span class="text-blue-700 font-medium">Make A Difference</span>—my true turning point.</p>
+                </div>
+            </div>
+
+            <div class="relative mb-20 flex flex-col md:flex-row items-center" data-aos="fade-right">
+                <div class="md:w-1/2 md:pr-10 text-right order-2 md:order-1">
+                    <h4 class="text-2xl font-bold">Masters in Computer Science</h4>
+                    <p class="mt-2 text-gray-600">Deepening expertise at UNT. Balanced academics with leadership as a <span class="font-medium italic">Student Assistant</span> and <span class="font-medium italic">Resident Assistant</span> for Upward Bound.</p>
+                </div>
+                <div class="bg-blue-900 w-6 h-6 rounded-full z-10 hidden md:block order-1 md:order-2"></div>
+                <div class="md:w-1/2 md:pl-10 order-3">
+                    <p class="text-gray-500">2024 - 2026</p>
+                </div>
+            </div>
+
+            <div class="relative mb-20 flex flex-col md:flex-row items-center" data-aos="zoom-in-up">
+                <div class="md:w-1/2 md:pr-10 text-right hidden md:block">
+                    <h4 class="text-2xl font-bold text-blue-900">The Convergence</h4>
+                    <p class="text-gray-500">Today & Beyond</p>
+                </div>
+                <div class="bg-blue-600 w-8 h-8 rounded-full z-10 hidden md:block ring-4 ring-blue-100"></div>
+                <div class="md:w-1/2 md:pl-10">
+                    <h4 class="text-2xl font-bold text-blue-600 underline">Where I am Headed</h4>
+                    <p class="mt-2 text-gray-600">Combining CS precision with HR empathy. Building systems that serve people better.</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <footer class="py-10 text-center text-gray-400 text-xs">
-        <p>&copy; 2026 Sahithi Tallapaneni. Built with HTML, Tailwind CSS, and Passion for HR Tech.</p>
-    </footer>
+    <section class="bg-gray-900 text-white py-20 px-6">
+        <div class="max-w-5xl mx-auto text-center">
+            <h3 class="text-3xl font-bold mb-12">Technical Eco-System</h3>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div data-aos="flip-up">
+                    <p class="text-4xl mb-2 text-blue-400 font-mono">01</p>
+                    <h5 class="font-bold">HRIS Support</h5>
+                    <p class="text-xs text-gray-400">Workday & SAP</p>
+                </div>
+                <div data-aos="flip-up" data-aos-delay="100">
+                    <p class="text-4xl mb-2 text-blue-400 font-mono">02</p>
+                    <h5 class="font-bold">Data Querying</h5>
+                    <p class="text-xs text-gray-400">Advanced SQL</p>
+                </div>
+                <div data-aos="flip-up" data-aos-delay="200">
+                    <p class="text-4xl mb-2 text-blue-400 font-mono">03</p>
+                    <h5 class="font-bold">Analytics</h5>
+                    <p class="text-xs text-gray-400">Python & Power BI</p>
+                </div>
+                <div data-aos="flip-up" data-aos-delay="300">
+                    <p class="text-4xl mb-2 text-blue-400 font-mono">04</p>
+                    <h5 class="font-bold">Automation</h5>
+                    <p class="text-xs text-gray-400">ETL Pipelines</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <script>
+        AOS.init({ duration: 1000, once: true });
+    </script>
 </body>
 </html>
