@@ -8,7 +8,27 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <style>
+        @keyframes smokeMove {
+    0% { transform: translate(0, 0) scale(1); opacity: 0.4; }
+    50% { transform: translate(20px, -20px) scale(1.1); opacity: 0.7; }
+    100% { transform: translate(0, 0) scale(1); opacity: 0.4; }
+}
+
+.smoke-container {
+    position: relative;
+    overflow: hidden;
+    background: #f8fafc; /* Very light slate */
+}
+
+.smoke-particle {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(80px);
+    z-index: 0;
+    animation: smokeMove 8s infinite ease-in-out;
+}
         .smoke-bg { background: linear-gradient(to bottom, #ffffff, #f3f4f6, #e5e7eb); }
+        
         .roadmap-line { width: 4px; background: #1e3a8a; position: absolute; left: 50%; transform: translateX(-50%); height: 100%; z-index: 0; }
     </style>
 </head>
@@ -30,13 +50,21 @@
         </div>
     </section>
 
-    <section class="smoke-bg py-32 flex items-center justify-center text-center px-6">
-        <div data-aos="fade-up" data-aos-duration="2000" class="max-w-3xl">
-            <h2 class="text-3xl md:text-4xl font-light leading-relaxed">
-                Heres the story: <span class="font-bold text-blue-900">Computer science chose me</span> and i chose HR and turns out there is a bridge between both.
-            </h2>
-        </div>
-    </section>
+   <section class="smoke-container py-40 flex items-center justify-center text-center px-6 min-h-[60vh]">
+    
+    <div class="smoke-particle bg-blue-100 w-96 h-96 -top-10 -left-10"></div>
+    <div class="smoke-particle bg-gray-200 w-[500px] h-[500px] bottom-0 right-0" style="animation-delay: -2s;"></div>
+    <div class="smoke-particle bg-blue-50 w-80 h-80 top-1/2 left-1/2" style="animation-delay: -4s;"></div>
+
+    <div data-aos="zoom-in" data-aos-duration="2500" class="relative z-10 max-w-4xl">
+        <h2 class="text-3xl md:text-5xl font-light leading-snug text-gray-800">
+            Heres the story: <br>
+            <span class="font-bold text-blue-900 italic">Computer science chose me</span> <br>
+            and i chose HR... <br>
+            <span class="text-2xl mt-4 block text-gray-500 font-medium">and turns out there is a bridge between both.</span>
+        </h2>
+    </div>
+</section>
 
     <section class="py-20 relative px-6">
         <h3 class="text-4xl font-bold text-center mb-20">My Life Roadmap</h3>
