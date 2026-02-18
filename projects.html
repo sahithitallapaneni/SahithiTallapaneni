@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Sahithi Tallapaneni</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="bg-gray-50">
+
+    <nav class="p-6">
+        <a href="index.html" class="text-gray-500 hover:text-blue-900"><i class="fas fa-arrow-left"></i> Back to Story</a>
+    </nav>
+
+    <main class="max-w-5xl mx-auto py-12 px-6">
+        <h1 class="text-4xl font-bold mb-4">The Technical Lab</h1>
+        <p class="text-gray-600 mb-12">Deep dives into the tools and systems I build to optimize HR.</p>
+
+        <div class="bg-white rounded-3xl p-8 md:p-12 shadow-sm border border-gray-100 mb-12">
+            <div class="flex flex-col md:flex-row gap-10">
+                <div class="md:w-1/2">
+                    <h2 class="text-2xl font-bold mb-4">HRIS Integrity & Audit Tool</h2>
+                    <p class="text-gray-600 mb-6 italic">Built to solve: "How do we ensure 200+ personnel records are always payroll-ready?"</p>
+                    <h4 class="font-bold mb-2">The Impact:</h4>
+                    <ul class="text-sm text-gray-600 space-y-2 mb-6">
+                        <li>• Reduced manual audit time by 70%.</li>
+                        <li>• Identified 15+ data discrepancies in system migrations.</li>
+                        <li>• Standardized documentation for volunteer tracking.</li>
+                    </ul>
+                    <a href="#" class="bg-blue-900 text-white px-6 py-2 rounded-full text-sm inline-block hover:bg-blue-800">View Code on GitHub</a>
+                </div>
+                <div class="md:w-1/2 bg-gray-900 rounded-2xl p-4 font-mono text-xs text-blue-300">
+                    <p class="text-gray-500 text-center mb-2">// SQL Audit Snippet</p>
+                    SELECT Employee_ID, Name, Start_Date <br>
+                    FROM HR_Master_Record <br>
+                    WHERE Status = 'Active' <br>
+                    AND (Salary IS NULL OR Email NOT LIKE '%@%');
+                </div>
+            </div>
+        </div>
+
+        </main>
+
+</body>
+</html>
