@@ -19,15 +19,18 @@
     overflow: hidden;
     background: #f8fafc; /* Very light slate */
 }
-
 .smoke-particle {
     position: absolute;
     border-radius: 50%;
     filter: blur(80px);
     z-index: 0;
     animation: smokeMove 8s infinite ease-in-out;
+    /* Add this line below */
+    transition: transform 0.2s ease-out; 
+    pointer-events: none; /* Allows clicks to pass through to buttons/links */
 }
-        .smoke-bg { background: linear-gradient(to bottom, #ffffff, #f3f4f6, #e5e7eb); }
+
+        
         
         .roadmap-line { width: 4px; background: #1e3a8a; position: absolute; left: 50%; transform: translateX(-50%); height: 100%; z-index: 0; }
     </style>
@@ -176,5 +179,22 @@
     <script>
         AOS.init({ duration: 1000, once: true });
     </script>
+    <script>
+    document.addEventListener('mousemove', (e) => {
+        const particles = document.querySelectorAll('.smoke-particle');
+        const mouseX = e.clientX;
+        const mouseY = e.clientY;
+
+        particles.forEach((particle, index) => {
+            // Each particle moves at a slightly different speed (index * 0.01) 
+            // to create a 3D depth effect (Parallax)
+            const speed = (index + 1) * 0.02; 
+            const x = (window.innerWidth / 2 - mouseX) * speed;
+            const y = (window.innerHeight / 2 - mouseY) * speed;
+
+            particle.style.transform = `translate(${x}px, ${y}px)`;
+        });
+    });
+</script>
 </body>
 </html>
